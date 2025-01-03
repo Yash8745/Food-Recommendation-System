@@ -70,7 +70,9 @@ Also ensemble methods like bagging like random forest and boosting like gradient
 0. **Clone repository**: 
    Clone the repository to your local machine using the following command:
    ```bash
-   git clone
+   git clone "link of the repository"
+   git lfs install
+   git lfs pull
    ```
    make sure you have git lfs installed to clone the repository.
    
@@ -80,6 +82,9 @@ Also ensemble methods like bagging like random forest and boosting like gradient
    numpy, pandas, matplotlib, seaborn, scikit-learn, nltk, spacy, ast
    ```
    or you can also run requirements.txt file to install all the required packages.
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 2. **Create folders**: 
    File structure should be as follows:
