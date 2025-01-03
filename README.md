@@ -37,35 +37,6 @@ The project followed a modular approach with multiple components working togethe
 
 
 
-## Challenges
-
-### 1. **Data Quality**
-   - *Challenge*: 1. Quantity and quality of data were inconsistent, leading to incomplete or inaccurate recommendations. 
-   2. Lack of Labelled Data: The dataset did not have explicit labels for dietary restrictions, cuisines, or recipe complexity, making it challenging to classify recipes accurately.
-   - *Solution*: I partitioned into a sizable chunk so that we can preprocess a small sample first then scale it up to the entire dataset. I also labeled based on patterns and common ingredients to classify recipes into dietary restrictions and cuisines.
-
-### 2. **Recommendation Accuracy**
-   - *Challenge*: The model is struggeling to show accurate recommendations based on user preferences and past interactions.
-   - *Solution*: With more time could build a robust machine learning model that learns from user interactions and feedback to provide more accurate recommendations. Also, I could use more advanced techniques like collaborative filtering and deep learning models like transformers to improve the recommendation accuracy.
-
-### 3. **Computation Complexity**
-   - *Challenge*: Processing a large dataset with millions of recipes and ingredients required significant computational resources and time.
-   - *Solution*: I tried to parallelize the processing steps and optimized the code to reduce the time complexity of the algorithms used for classification and recommendation but eventually decided to work with a smaller subset of the data for faster prototyping.
-
-
-## Ideas for Improvement
-
-1. **Enhanced Personalization**: With more time, I would integrate more personalized filters based on factors like health conditions (e.g., gluten-free, low-carb) and seasonal preferences.
-
-2. **Advanced Model Integration**: I would explore using deep learning techniques such as neural networks to predict recipes based on more complex patterns in user preferences and ingredient combinations.
-Techinicques like collaborative filtering, matrix factorization, and deep learning could be explored for more accurate recommendations.
-Also ensemble methods like bagging like random forest and boosting like gradient boosting could be used to improve the model performance.
-
-3. **Real-time Feedback Loop**: Incorporating a real-time feedback loop, where the system continuously learns from the user’s evolving preferences, would improve the system’s accuracy.Implementing ci/cd pipeline to deploy the model in production environment.
-
-4. **Deployment**: Deploying the model as a web application or would make it more accessible to users, allowing them to receive recipe recommendations on the go.
-
-
 ## How to run jupyter notebook
 0. **Clone repository**: 
    Clone the repository to your local machine using the following command:
@@ -103,6 +74,35 @@ Also ensemble methods like bagging like random forest and boosting like gradient
 
 4. **Show Visulization**:
     Run the jupyter notebook `data_visulization.ipynb` to see the data visulization.
+
+## Challenges
+
+### 1. **Data Quality**
+   - *Challenge*: 1. Quantity and quality of data were inconsistent, leading to incomplete or inaccurate recommendations. 
+   2. Lack of Labelled Data: The dataset did not have explicit labels for dietary restrictions, cuisines, or recipe complexity, making it challenging to classify recipes accurately.
+   - *Solution*: I partitioned into a sizable chunk so that we can preprocess a small sample first then scale it up to the entire dataset. I also labeled based on patterns and common ingredients to classify recipes into dietary restrictions and cuisines.
+
+### 2. **Recommendation Accuracy**
+   - *Challenge*: The model is struggeling to show accurate recommendations based on user preferences and past interactions.
+   - *Solution*: With more time could build a robust machine learning model that learns from user interactions and feedback to provide more accurate recommendations. Also, I could use more advanced techniques like collaborative filtering and deep learning models like transformers to improve the recommendation accuracy.
+
+### 3. **Computation Complexity**
+   - *Challenge*: Processing a large dataset with millions of recipes and ingredients required significant computational resources and time.
+   - *Solution*: I tried to parallelize the processing steps and optimized the code to reduce the time complexity of the algorithms used for classification and recommendation but eventually decided to work with a smaller subset of the data for faster prototyping.
+
+
+## Ideas for Improvement
+
+1. **Enhanced Personalization**: With more time, I would integrate more personalized filters based on factors like health conditions (e.g., gluten-free, low-carb) and seasonal preferences.
+
+2. **Advanced Model Integration**: I would explore using deep learning techniques such as neural networks to predict recipes based on more complex patterns in user preferences and ingredient combinations.
+Techinicques like collaborative filtering, matrix factorization, and deep learning could be explored for more accurate recommendations.
+Also ensemble methods like bagging like random forest and boosting like gradient boosting could be used to improve the model performance.
+
+3. **Real-time Feedback Loop**: Incorporating a real-time feedback loop, where the system continuously learns from the user’s evolving preferences, would improve the system’s accuracy.Implementing ci/cd pipeline to deploy the model in production environment.
+
+4. **Deployment**: Deploying the model as a web application or would make it more accessible to users, allowing them to receive recipe recommendations on the go.
+
 
 
 
